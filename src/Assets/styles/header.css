@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: "Mukta", sans-serif;
+}
+
+.header {
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: absolute;
+  width: 100%;
+  padding-left: 2rem;
+  /* top: 5px; */
+  /* left: 6.7%; */
+  z-index: 5;
+  /* border: 2px rgba(255, 255, 255, 0.526) solid;
+  border-radius: 0.5rem; */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* max-width: 1000px; */
+  padding-right: 2.5rem;
+}
+
+.header-logo {
+  position: relative;
+  top: 0.75rem;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.header-menu {
+  top: 1rem;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header-item {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.header-links {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header-links:hover {
+  color: #08cc96;
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    padding: 0%;
+    width: 93%;
+    border: 1.65px rgba(255, 255, 255, 0.389) solid;
+    margin: 1rem;
+    margin-left: 1.02rem;
+    border-radius: 1rem;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 20px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .header-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 70px);
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    opacity: 0;
+    padding: 0%;
+    transition: all 0.5s ease;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .header-menu.active {
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .header-item {
+    height: 80px;
+  }
+
+  .header-links {
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  .header {
+    padding: 0%;
+  }
+  .menu-icon {
+    top: 2rem !important;
+  }
+  .header-menu {
+    width: 30%;
+    height: calc(100vh - 70px);
+  }
+}

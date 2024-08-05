@@ -1,0 +1,117 @@
+.social-links-section {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 4rem;
+  background: linear-gradient(
+    45deg,
+    #42af77 25%,
+    #42af77 50%,
+    #337af7 50%,
+    #337af7 75%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+
+@media (max-width: 1024px) {
+  .social-links-section {
+    font-size: 3rem;
+    padding: 15px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .social-links-section {
+    font-size: 2rem;
+    padding: 10px;
+    letter-spacing: 2px;
+  }
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid; /* Box border */
+  border-image: linear-gradient(45deg, #337af7, #42af77) 1; /* Gradient border */
+  padding: 5px 10px; /* Space inside the border */
+  border-radius: 5px; /* Optional: rounded corners */
+  margin: 5px 0; /* Space between items */
+  width: 100%;
+  max-width: 500px;
+  padding: 15px 20px;
+  margin: 10px 0;
+  background-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  transform: scale(1.5);
+}
+
+.social-link span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #337af7, #42af77);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.social-link img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and larger screens */
+@media (max-width: 1024px) {
+  .social-link {
+    padding: 10px 15px;
+  }
+
+  .social-link span {
+    font-size: 1.2rem;
+  }
+
+  .social-link img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .social-link:hover {
+    transform: scale(1.07);
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .social-link {
+    padding: 8px 12px;
+  }
+
+  .social-link span {
+    font-size: 1rem;
+  }
+
+  .social-link img {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,6 @@
+.frontend {
+  overflow-x: none;
+}
+html {
+  scroll-behavior: smooth;
+}

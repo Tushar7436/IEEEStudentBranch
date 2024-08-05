@@ -1,0 +1,38 @@
+.dynamic-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #83d0ff, #92ffca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  width: fit-content;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #9ac8ec;
+  }
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and larger screens */
+@media (max-width: 1024px) {
+  .dynamic-text {
+    font-size: 1.25rem;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .dynamic-text {
+    font-size: 1rem;
+  }
+}
