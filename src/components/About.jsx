@@ -15,13 +15,6 @@ export const Reel = () => {
           highly-cited publications, conferences, technology standards, and
           educational activities, IEEE provides a platform for the global
           technical community to collaborate and innovate.
-          <br />
-          Our chapter at VIT Bhopal is committed to providing a dynamic platform
-          for collaboration, skill enhancement, and leadership in the
-          ever-evolving world of engineering and technology. We prioritize the
-          development of our student partners by encouraging active
-          participation and shared responsibility. Join us in our journey to
-          make a significant impact through innovation and excellence.
         </p>
       </div>
       {/* <div className="flex-item square">

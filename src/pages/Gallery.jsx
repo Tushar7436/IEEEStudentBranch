@@ -20,7 +20,7 @@ const imagesArray = [img1, img2, img3, img4, img5, img6, img7, img8];
 const Header = () => (
   <header className="demo-wrapper__header demo-wrapper__flex demo-wrapper__align-items-center demo-wrapper__justify-content-center">
     <div>
-      <h1 className="demo-wrapper__heading1">Gallery Section</h1>
+      <h1 className="demo-wrapper__heading1">Gallery</h1>
     </div>
   </header>
 );

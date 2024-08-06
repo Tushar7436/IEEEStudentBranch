@@ -199,10 +199,15 @@
   }
 
   .Team_images {
-    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+    justify-content: flex-start; /* Ensure items align to the left */
+    padding-left: 2.5rem; /* Maintain left padding */
   }
 
-  .team-item:nth-child(3) {
-    margin: 0 auto; /* Center img3 */
+  .team-item {
+    margin: 0px 10px; /* Ensure items have margin for spacing */
   }
 }

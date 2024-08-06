@@ -13,7 +13,7 @@ body {
 .demo-wrapper__heading1 {
   font-size: 7rem;
   margin: -10rem 2rem -15rem 2.5rem;
-  text-decoration: underline;
+  text-decoration:dashed;
 }
 
 .demo-wrapper__image {
@@ -81,4 +81,12 @@ demo-wrapper__wrapper demo-wrapper__text {
   font-size: clamp(6rem, 15vw, 9rem);
   line-height: 1;
   font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .demo-wrapper__heading1 {
+    font-size: 4rem;
+    margin: -10rem 2rem -15rem 2.5rem;
+  }
+  
 }

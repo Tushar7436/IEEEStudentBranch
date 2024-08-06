@@ -10,11 +10,11 @@ import 'react-horizontal-scrolling-menu/dist/styles.css';
 
 
 const teamData = [
+  { src: img1, alt: 'Dr. Ankur', name: 'Dr.ANKUR BEOHAR', title: 'Senior Branch Advisor', description: 'Dr. Ankur Beohar is an Assistant Professor in ECE Department of School of Electrical and Electronics Engineering, VIT Bhopal University, India.' },
   { src: img3, alt: 'Dean', name: 'Dr.M SURESH', title: 'Dean', description: 'Dr. M Suresh has completed his PhD in Digital Design from SUIIT, India in 2021. He holds a Master’s in Engineering (ME) from Jadavpur University and Bachelor’s in Engineering (BE) from Andhra University in ECE.' },
-  { src: img1, alt: 'Dr. Ankur', name: 'Dr.ANKUR BEOHAR', title: 'Assistant Professor', description: 'Dr. Ankur Beohar is an Assistant Professor in ECE Department of School of Electrical and Electronics Engineering, VIT Bhopal University, India.' },
   { src: img2, alt: 'VICE-CHANCELLOR', name: 'Dr.Senthil Kumar Arumugam', title: 'VICE-CHANCELLOR', description: 'Dr. Senthil Kumar Arumugam has been serving at VIT Vellore since 1992. He has taught a range of subjects from Thermodynamics, Thermal Engineering, Fluid Mechanics, Heat Transfer, CFD, Cryogenics to Renewable Energy at both undergraduate and post graduate levels.' },
-  { src: img4, alt: 'Dr.Pallabi Sakar', name: 'Dr. PALLABI SARKAR', title: 'Assistant Professor', description: 'Dr. Ankur Beohar is an Assistant Professor in ECE Department of School of Electrical and Electronics Engineering, VIT Bhopal University, India.' },
   { src: img5, alt: 'Wing Commander (Dr) Debashis Adhikari (R)', name: 'Dr.Debashis Adhikari', title: 'Registrar', description: 'Wing Commander (Dr) Debashis Adhikari (R) is a BTech from Institute of Radio Physics & Electronics, Calcutta University, ME from Pune University and obtained his PhD in Wireless Communication from the Defense Institute of Advanced Technology (DRDO), Pune. ' },
+  { src: img4, alt: 'Dr.Pallabi Sakar', name: 'Dr. PALLABI SARKAR', title: 'Assistant Professor', description: 'Dr. Ankur Beohar is an Assistant Professor in ECE Department of School of Electrical and Electronics Engineering, VIT Bhopal University, India.' },
 ];
 
 export const OurTeam = () => {
