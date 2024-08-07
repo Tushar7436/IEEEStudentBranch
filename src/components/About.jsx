@@ -1,6 +1,6 @@
 import "../Assets/styles/About.css";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
-import Bgvideo from "../Assets/images/IEEE.mp4";
+// import Bgvideo from "../Assets/images/IEEE.mp4";
 
 export const Reel = () => {
   return (
