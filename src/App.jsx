@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import React, { useState, useEffect } from "react";
 import { Landing } from "./pages/Landing";
 import { Header } from "./components/Navbar";
@@ -44,6 +45,7 @@ export const App = () => {
           <div id="footer">
             <RevealFooter />
           </div>
+          <SpeedInsights />
         </>
       )}
     </div>
