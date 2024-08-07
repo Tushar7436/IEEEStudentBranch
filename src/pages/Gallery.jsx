@@ -3,19 +3,21 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import imagesLoaded from "imagesloaded";
 import "../Assets/styles/Gallery.css";
-
-import img1 from "../Assets/images/Gallery/img1.png";
-import img2 from "../Assets/images/Gallery/img2.png";
-import img3 from "../Assets/images/Gallery/img3.png";
-import img4 from "../Assets/images/Gallery/img4.png";
-import img5 from "../Assets/images/Gallery/img5.png";
-import img6 from "../Assets/images/Gallery/img6.png";
-import img7 from "../Assets/images/Gallery/img7.png";
-import img8 from "../Assets/images/Gallery/img8.png";
+import { Image, CloudinaryContext } from "cloudinary-react";
+import cloudinaryConfig from "../cloudinaryConfig"; // Ensure casing is consistent
 
 gsap.registerPlugin(ScrollTrigger);
 
-const imagesArray = [img1, img2, img3, img4, img5, img6, img7, img8];
+const imagesPublicIds = [
+  'img8_ux5pun',
+  'img5_wtxoxs',
+  'img3_sqswmm',
+  'img7_o2gvjt',
+  'img1_wimc9a',
+  'img6_kxs2n9',
+  'img4_gdwmrk',
+  'img2_fiftkl'
+];
 
 const Header = () => (
   <header className="demo-wrapper__header demo-wrapper__flex demo-wrapper__align-items-center demo-wrapper__justify-content-center">
@@ -34,9 +36,9 @@ const DemoText = () => (
 );
 
 const DemoGallery = ({ id }) => {
-  const images = imagesArray.map((src, i) => (
+  const images = imagesPublicIds.map((publicId, i) => (
     <li className="demo-wrapper__list-item" key={i}>
-      <img className="demo-wrapper__image" src={src} alt={`Local ${i}`} />
+      <Image className="demo-wrapper__image" cloudName={cloudinaryConfig.cloudName} publicId={publicId} alt={`Cloudinary ${i}`} />
     </li>
   ));
 
@@ -46,6 +48,7 @@ const DemoGallery = ({ id }) => {
     </section>
   );
 };
+
 export const HorizontalGallery = () => {
   useEffect(() => {
     const images = gsap.utils.toArray("img");
@@ -94,15 +97,17 @@ export const HorizontalGallery = () => {
   }, []);
 
   return (
-    <div className="Ng">
-      <div className="demo-wrapper">
-        <Header />
-        <DemoText />
-        {[...Array(4).keys()].map((i) => (
-          <DemoGallery key={i} id={i} />
-        ))}
-        <DemoText />
+    <CloudinaryContext cloudName={cloudinaryConfig.cloudName}>
+      <div className="Ng">
+        <div className="demo-wrapper">
+          <Header />
+          <DemoText />
+          {[...Array(4).keys()].map((i) => (
+            <DemoGallery key={i} id={i} />
+          ))}
+          <DemoText />
+        </div>
       </div>
-    </div>
+    </CloudinaryContext>
   );
 };
