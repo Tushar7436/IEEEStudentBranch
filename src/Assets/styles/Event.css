@@ -146,29 +146,11 @@
   #grid {
     height: auto;
     display: flex;
-    flex-direction: row; /* Changed to row for horizontal scrolling */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    gap: 20px; /* Space between images */
+    flex-direction: column;
+    gap: 20px; /* Added spacing between event cards */
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
-  }
-
-  .left,
-  .center,
-  .right {
-    flex: 0 0 auto; /* Prevent shrinking and ensure items are visible */
-    text-align: center;
-    background: white;
-    transition: 300ms;
-    padding: 1rem; 
-    border-radius: 1rem; 
-    min-width: 200px; /* Minimum width for scrolling */
-  }
-
-  .center img {
-    height: auto; /* Adjust height for better visibility */
-    max-width: 100%; /* Prevent image overflow */
   }
 
   .top,
