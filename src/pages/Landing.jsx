@@ -4,10 +4,10 @@ import "../Assets/styles/Landing.css";
 import { Link } from 'react-router-dom';
 import { scroller } from 'react-scroll';
 
-import Bgvideo from "../Assets/images/video16.mp4";
+// Use your Cloudinary video URL here
+const Bgvideo = "https://res.cloudinary.com/dxxmikdia/video/upload/v1722993537/video16_y6iskf.mp4";
 
 export const Landing = () => {
-
   const Buttonfooter = () => (
     <Link to="/FTG" className="btn-footer">
       <div className="btn-footer__content">
@@ -53,7 +53,7 @@ export const Landing = () => {
 
   return (
     <div className="landing">
-      <video autoPlay muted id="bg-video">
+      <video autoPlay muted id="bg-video" crossOrigin="anonymous">
         <source src={Bgvideo} type="video/mp4" />
       </video>
       <header className="land-header">

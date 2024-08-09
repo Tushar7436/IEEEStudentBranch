@@ -27,7 +27,7 @@ const DiscordLink = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/FTGChannels');
+    window.open('https://discord.gg/RwjFNHgV');
   };
 
   return (
