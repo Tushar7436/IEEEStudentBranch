@@ -11,7 +11,7 @@ export const Event1 = () => {
           <h1>Events</h1>
         </div>
         <div className="subHead">
-          <h2>Join Us in upcooming Exciting Events</h2>
+          <h2>Join Us in upcoming Exciting Events</h2>
         </div>
       </div>
       <div id="grid">
